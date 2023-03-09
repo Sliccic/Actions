@@ -31,16 +31,16 @@ hostname=app.bilibili.com, grpc.biliapi.net,*.biliapi.net,app.bilibili.com,api.b
 
 
 var modifiedHeaders = $request['headers'];
-modifiedHeaders['Cookie'] = '_uuid=BB9288C9-E545-8465-2F50-47A7719B060A31435infoc; buvid3=C425FF52-3C9A-4925-85D5-21EBA63D9AE9167613infoc; buvid4=7421EB27-74EC-BFCC-468A-B1604F6314E181256-123022412-qeZ1MXNZxeScB2mBHvxCMg%3D%3D; buvid_fp=c8ac2edc8c6105e01095dc1d019038c8; Buvid=Y2473926487C8DEE4E918E5A3C761D5F22FB; SESSDATA=855622f6%2C1693630581%2C7162c631; DedeUserID=39643112; DedeUserID__ckMd5=2b0e529b89c3f1ff; bili_jct=1aa7ebaa514d3e6e0394f4d7bb47ab70; sid=qimby2bh';
+modifiedHeaders['Cookie'] = '_uuid=BB9288C9-E545-8465-2F50-47A7719B060A31435infoc; buvid3=C425FF52-3C9A-4925-85D5-21EBA63D9AE9167613infoc; buvid4=7421EB27-74EC-BFCC-468A-B1604F6314E181256-123022412-qeZ1MXNZxeScB2mBHvxCMg%3D%3D; buvid_fp=c8ac2edc8c6105e01095dc1d019038c8; Buvid=Y2473926487C8DEE4E918E5A3C761D5F22FB; SESSDATA=db70c532%2C1693900341%2Cac570a31; DedeUserID=39643112; DedeUserID__ckMd5=2b0e529b89c3f1ff; bili_jct=8766ec52c8207542690abec34ab588ae; sid=oh76dmr2';
 modifiedHeaders['x-bili-device-bin'] = 'CAEQxIKMIhokWTI0NzM5MjY0ODdDOERFRTRFOTE4RTVBM0M3NjFENUYyMkZCIgZpcGhvbmUqA2lvczIFcGhvbmU6BWFwcGxlQgVBcHBsZUoJaVBob25lIDEyUgQxNi4xagY3LjE1LjByQEJBMEU0NTNDNzZBNzhBMENFMzhDMUNGMzRGRDlCNzUyMjAyMTA2MjIxNzQ0MzY0QzgwRDU2RTQ1MDZCNEU5OUN4kIyjjOgw';
-modifiedHeaders['Authorization'] = 'identify_v1 51661b8900015b9a61e29b910536e431';
-modifiedHeaders['User-Agent'] = 'bili-universal/71500100 os/ios model/iPhone 12 mobi_app/iphone osVer/16.1 network/1';
+modifiedHeaders['Authorization'] = 'identify_v1 1a6d8af26c81abaa9a584dcf9bde5a31';
+modifiedHeaders['User-Agent'] = 'bili-universal/71500100 os/ios model/iPhone 12 mobi_app/iphone osVer/16.1 network/2';
 modifiedHeaders['buvid'] = 'Y2473926487C8DEE4E918E5A3C761D5F22FB';
-modifiedHeaders['x-bili-metadata-bin'] = 'CiA1MTY2MWI4OTAwMDE1YjlhNjFlMjliOTEwNTM2ZTQzMRIGaXBob25lGgVwaG9uZSDEgowiKgVhcHBsZTIkWTI0NzM5MjY0ODdDOERFRTRFOTE4RTVBM0M3NjFENUYyMkZCOgNpb3M=';
+modifiedHeaders['x-bili-metadata-bin'] = 'CiAxYTZkOGFmMjZjODFhYmFhOWE1ODRkY2Y5YmRlNWEzMRIGaXBob25lGgVwaG9uZSDEgowiKgVhcHBsZTIkWTI0NzM5MjY0ODdDOERFRTRFOTE4RTVBM0M3NjFENUYyMkZCOgNpb3M=';
 modifiedHeaders['x-bili-locale-bin'] = 'Eg4KAnpoEgRIYW5zGgJDTg==';
-modifiedHeaders['x-bili-network-bin'] = 'CAIaB3RlbGVjb20=';
-modifiedHeaders['x-bili-fawkes-req-bin'] = 'CgZpcGhvbmUSBHByb2QaCGU5MjdmMzcx';
-modifiedHeaders['x-bili-trace-id'] = '9f33c838c8368644bb976455b2207294:bb976455b2207294:0:0';
+modifiedHeaders['x-bili-network-bin'] = 'CAE=';
+modifiedHeaders['x-bili-fawkes-req-bin'] = 'CgZpcGhvbmUSBHByb2QaEGZmZmZmZmZmZjUxMmQ1MTA=';
+modifiedHeaders['x-bili-trace-id'] = '3eadbdef703d63fe3dd28504e7e6202c:3dd28504e7e6202c:0:0';
 modifiedHeaders['x-bili-exps-bin'] = 'CgIIAQ==';
-modifiedHeaders['x-bili-network-bin'] = 'CAIaB3RlbGVjb20=';
+modifiedHeaders['x-bili-network-bin'] = 'CAE=';
 $done({'headers': modifiedHeaders});
