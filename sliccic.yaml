@@ -106,7 +106,7 @@ i:
 proxy-providers:
   Subscribe:
     <<: *a1
-    url: https://sub.xeton.dev/sub?target=clash&url=https://raw.githubusercontent.com/Sliccic/JD/main/JD.txt?token=GHSAT0AAAAAACB4LIPAZV4U3NY447QR3WTWZCIZJHA&list=true&udp=false 
+    url: https://sub.xeton.dev/sub?target=clash&url=https://raw.githubusercontent.com/Sliccic/Actions/main/jd.txt&list=true&udp=false 
     path: ./proxy_providers/tmp.yaml
 
 
