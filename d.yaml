@@ -1,0 +1,263 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+proxies:
+  - {name: 🇳🇱 荷兰v4 原生, server: xhl.sliccic.me, port: 2087, type: vmess, uuid: 30f4c8c7-7f59-4276-894a-9383e8b77860, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: xhl.sliccic.me}}
+  - {name: 🇳🇱 荷兰v4 TON, server: cf.noaries.de, port: 2087, type: vmess, uuid: 30f4c8c7-7f59-4276-894a-9383e8b77860, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: xhl.sliccic.me}}
+  - {name: 🇳🇱 荷兰v4 阿里云, server: beta.noaries.de, port: 2087, type: vmess, uuid: 30f4c8c7-7f59-4276-894a-9383e8b77860, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: xhl.sliccic.me}}
+  - {name: 🇳🇱 荷兰v4 VISA, server: visa.noaries.de, port: 2087, type: vmess, uuid: 30f4c8c7-7f59-4276-894a-9383e8b77860, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: xhl.sliccic.me}}
+  - {name: 🇳🇱 荷兰v4 CF商段, server: tech.noaries.de, port: 2087, type: vmess, uuid: 30f4c8c7-7f59-4276-894a-9383e8b77860, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: xhl.sliccic.me}}
+  - {name: 🇳🇱 荷兰v4 黑弩, server: heinu.noaries.de, port: 2087, type: vmess, uuid: 30f4c8c7-7f59-4276-894a-9383e8b77860, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: xhl.sliccic.me}}
+  - {name: 🇳🇱 荷兰v6, server: shl.sliccic.me, port: 2083, type: vmess, uuid: 446396c9-6873-4f14-934c-d597fd55e98b, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: shl.sliccic.me}}
+  - {name: 🇺🇸 US, server: cf.noaries.de, port: 80, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /shares, ws-headers: {Host: la.awsbest.com}}
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - 🇳🇱 荷兰v4 原生
+      - 🇳🇱 荷兰v4 TON
+      - 🇳🇱 荷兰v4 阿里云
+      - 🇳🇱 荷兰v4 VISA
+      - 🇳🇱 荷兰v4 CF商段
+      - 🇳🇱 荷兰v4 黑弩
+      - 🇳🇱 荷兰v6
+      - 🇺🇸 US
+  - name: 📲 TELEGRAM
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇳🇱 荷兰v4 原生
+      - 🇳🇱 荷兰v4 TON
+      - 🇳🇱 荷兰v4 阿里云
+      - 🇳🇱 荷兰v4 VISA
+      - 🇳🇱 荷兰v4 CF商段
+      - 🇳🇱 荷兰v4 黑弩
+      - 🇳🇱 荷兰v6
+      - 🇺🇸 US
+  - name: 📹 YOUTUBE
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇳🇱 荷兰v4 原生
+      - 🇳🇱 荷兰v4 TON
+      - 🇳🇱 荷兰v4 阿里云
+      - 🇳🇱 荷兰v4 VISA
+      - 🇳🇱 荷兰v4 CF商段
+      - 🇳🇱 荷兰v4 黑弩
+      - 🇳🇱 荷兰v6
+      - 🇺🇸 US
+  - name: 🎥 NETFLIX
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+  - name: 🎥 DISNEY
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇳🇱 荷兰v4 原生
+      - 🇳🇱 荷兰v4 TON
+      - 🇳🇱 荷兰v4 阿里云
+      - 🇳🇱 荷兰v4 VISA
+      - 🇳🇱 荷兰v4 CF商段
+      - 🇳🇱 荷兰v4 黑弩
+      - 🇳🇱 荷兰v6
+      - 🇺🇸 US
+  - name: 📺 NICONICO
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+  - name: 📺 巴哈姆特
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+  - name: 📺 哔哩哔哩
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+  - name: 📺 爱奇艺
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+  - name: 🌏 国内视频
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+  - name: 🌍 海外视频
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇳🇱 荷兰v4 原生
+      - 🇳🇱 荷兰v4 TON
+      - 🇳🇱 荷兰v4 阿里云
+      - 🇳🇱 荷兰v4 VISA
+      - 🇳🇱 荷兰v4 CF商段
+      - 🇳🇱 荷兰v4 黑弩
+      - 🇳🇱 荷兰v6
+      - 🇺🇸 US
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - 🇳🇱 荷兰v4 原生
+      - 🇳🇱 荷兰v4 TON
+      - 🇳🇱 荷兰v4 阿里云
+      - 🇳🇱 荷兰v4 VISA
+      - 🇳🇱 荷兰v4 CF商段
+      - 🇳🇱 荷兰v4 黑弩
+      - 🇳🇱 荷兰v6
+      - 🇺🇸 US
+  - name: 📢 谷歌服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇳🇱 荷兰v4 原生
+      - 🇳🇱 荷兰v4 TON
+      - 🇳🇱 荷兰v4 阿里云
+      - 🇳🇱 荷兰v4 VISA
+      - 🇳🇱 荷兰v4 CF商段
+      - 🇳🇱 荷兰v4 黑弩
+      - 🇳🇱 荷兰v6
+      - 🇺🇸 US
+  - name: Ⓜ️ ONEDRIVE
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - 🇳🇱 荷兰v4 原生
+      - 🇳🇱 荷兰v4 TON
+      - 🇳🇱 荷兰v4 阿里云
+      - 🇳🇱 荷兰v4 VISA
+      - 🇳🇱 荷兰v4 CF商段
+      - 🇳🇱 荷兰v4 黑弩
+      - 🇳🇱 荷兰v6
+      - 🇺🇸 US
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - 🇳🇱 荷兰v4 原生
+      - 🇳🇱 荷兰v4 TON
+      - 🇳🇱 荷兰v4 阿里云
+      - 🇳🇱 荷兰v4 VISA
+      - 🇳🇱 荷兰v4 CF商段
+      - 🇳🇱 荷兰v4 黑弩
+      - 🇳🇱 荷兰v6
+      - 🇺🇸 US
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - 🇳🇱 荷兰v4 原生
+      - 🇳🇱 荷兰v4 TON
+      - 🇳🇱 荷兰v4 阿里云
+      - 🇳🇱 荷兰v4 VISA
+      - 🇳🇱 荷兰v4 CF商段
+      - 🇳🇱 荷兰v4 黑弩
+      - 🇳🇱 荷兰v6
+      - 🇺🇸 US
+  - name: 🎮 海外游戏
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇳🇱 荷兰v4 原生
+      - 🇳🇱 荷兰v4 TON
+      - 🇳🇱 荷兰v4 阿里云
+      - 🇳🇱 荷兰v4 VISA
+      - 🇳🇱 荷兰v4 CF商段
+      - 🇳🇱 荷兰v4 黑弩
+      - 🇳🇱 荷兰v6
+      - 🇺🇸 US
+  - name: 🎶 网易云音乐
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - 🇳🇱 荷兰v4 原生
+      - 🇳🇱 荷兰v4 TON
+      - 🇳🇱 荷兰v4 阿里云
+      - 🇳🇱 荷兰v4 VISA
+      - 🇳🇱 荷兰v4 CF商段
+      - 🇳🇱 荷兰v4 黑弩
+      - 🇳🇱 荷兰v6
+      - 🇺🇸 US
+  - name: 📈 GITHUB
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇳🇱 荷兰v4 原生
+      - 🇳🇱 荷兰v4 TON
+      - 🇳🇱 荷兰v4 阿里云
+      - 🇳🇱 荷兰v4 VISA
+      - 🇳🇱 荷兰v4 CF商段
+      - 🇳🇱 荷兰v4 黑弩
+      - 🇳🇱 荷兰v6
+      - 🇺🇸 US
+  - name: 📖 学术网站
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇳🇱 荷兰v4 原生
+      - 🇳🇱 荷兰v4 TON
+      - 🇳🇱 荷兰v4 阿里云
+      - 🇳🇱 荷兰v4 VISA
+      - 🇳🇱 荷兰v4 CF商段
+      - 🇳🇱 荷兰v4 黑弩
+      - 🇳🇱 荷兰v6
+      - 🇺🇸 US
+  - name: 🛑 广告拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🛡️ 隐私防护
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇳🇱 荷兰v4 原生
+      - 🇳🇱 荷兰v4 TON
+      - 🇳🇱 荷兰v4 阿里云
+      - 🇳🇱 荷兰v4 VISA
+      - 🇳🇱 荷兰v4 CF商段
+      - 🇳🇱 荷兰v4 黑弩
+      - 🇳🇱 荷兰v6
+      - 🇺🇸 US
+rules:
+ - DOMAIN-SUFFIX,services.googleapis.cn,📢 谷歌服务
+ - GEOIP,CN,🎯 全球直连
+ - MATCH,🐟 漏网之鱼
